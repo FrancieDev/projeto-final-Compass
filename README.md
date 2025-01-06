@@ -6,7 +6,7 @@ ___
 * Francie Lima
 * Leonardo Pereira
 
-CONTEXTO:
+**CONTEXTO:**
 
 Nós somos da empresa "Fast Engineering S/A" e gostaríamos de uma solução dos senhores(as), que fazem parte da empresa terceira "TI SOLUÇÕES INCRÍVEIS".
 
@@ -28,4 +28,6 @@ Queremos modernizar esse sistema para a AWS, precisamos seguir as melhores prát
 * Segurança;
 
 Porém antes da migração acontecer para a nova estrutura, precisamos fazer uma migração “lift-and-shift” ou “as-is”, o mais rápido possível, só depois que iremos promover a modificação para a nova estrutura em Kubernetes.
+
+**ETAPA 1: MIGRAÇÃO "AS-IS"**
 
