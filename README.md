@@ -17,3 +17,15 @@ Atualmente usamos:
 * 01 servidor para a aplicação utilizando REACT – frontend (5GB de dados, 2Gb de RAM, 1 Core CPU);
 * 01 servidor de backend com 3 APIs, com o Nginx servindo de balanceador de carga e que armazena estáticos como fotos e links. (5GB de dados, 4Gb de RAM, 2 Core CPU);
 
+![situação atual](https://github.com/user-attachments/assets/bb36eb77-28e0-44e4-b7cb-db14856ccd3a)
+
+Queremos modernizar esse sistema para a AWS, precisamos seguir as melhores práticas arquitetura em Cloud AWS, a nova arquitetura deve seguir as seguintes diretrizes:
+
+* Ambiente Kubernetes;
+* Banco de dados gerenciado (PaaS e Multi AZ);
+* Backup de dados;
+* Sistema para persistência de objetos (imagens, vídeos etc.);•
+* Segurança;
+
+Porém antes da migração acontecer para a nova estrutura, precisamos fazer uma migração “lift-and-shift” ou “as-is”, o mais rápido possível, só depois que iremos promover a modificação para a nova estrutura em Kubernetes.
+
