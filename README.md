@@ -31,3 +31,15 @@ Porém antes da migração acontecer para a nova estrutura, precisamos fazer uma
 
 **ETAPA 1: MIGRAÇÃO "AS-IS"**
 
+ATIVIDADES NECESSÁRIAS PARA A MIGRAÇÃO
+
+1. Definição dos pré-requisitos
+2. Criação do usuário do AWS Identity and Access Management (IAM)
+3. Acesso ao console do AWS MGN
+4. Definição do modelo de configurações de replicação
+5. Instalação do AWS Replication Agent
+6. Definição das configurações de execução
+7. Execução de uma instância de teste
+8. Execução de uma instância de substituição
+9. Limpeza após a substituição final
+
