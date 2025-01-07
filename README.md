@@ -1,6 +1,10 @@
 # Projeto Final do Programa de Bolsas Compass UOL
 ___
-  ![logo-compass](./assets/LogoCompassUol.png)
+
+<p align="center">
+  <img src="./assets/logoCompassUol.png" alt="Logo Compass">
+</p>
+
 
 **Integrantes do Grupo:**
 * Francie Lima
