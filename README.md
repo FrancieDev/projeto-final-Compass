@@ -223,6 +223,7 @@ A arquitetura proposta segue as melhores práticas e está de acordo com os pila
 <div align="center">
   <img src="/assets/Custoarquitetura.png">
 </div>
+
 [Ver mais detalhes](https://calculator.aws/#/estimate?id=17cbfd330d1421d8930e591fb7a81eeb7ac72be8)
 
 ### Custos
