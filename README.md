@@ -1,4 +1,4 @@
-# Projeto Final do Programa de Bolsas Compass UOL
+# ☁️ Projeto Final do Programa de Bolsas Compass UOL
 ___
 
 <div align="center">
@@ -6,11 +6,11 @@ ___
 </div>
 
 
-**Integrantes do Grupo:**
+### 👥 Integrantes do Grupo:
 * Francie Lima
 * Leonardo Pereira
 
-**CONTEXTO:**
+**🔎 CONTEXTO:**
 
 Nós somos da empresa "Fast Engineering S/A" e gostaríamos de uma solução dos senhores(as), que fazem parte da empresa terceira "TI SOLUÇÕES INCRÍVEIS".
 
@@ -23,7 +23,7 @@ Atualmente usamos:
 
 <div align="center">
   <img src="/assets/ArquiteturaAtual.png" width="400px">
-   <p><em>Arquitetura atual da Fast Engineering</em></p>
+   <p><em>Arquitetura atual da Fast Engineering S/A</em></p>
 </div>
 
 Queremos modernizar esse sistema para a AWS, precisamos seguir as melhores práticas arquitetura em Cloud AWS, a nova arquitetura deve seguir as seguintes diretrizes:
@@ -36,7 +36,7 @@ Queremos modernizar esse sistema para a AWS, precisamos seguir as melhores prát
 
 Porém antes da migração acontecer para a nova estrutura, precisamos fazer uma migração “lift-and-shift” ou “as-is”, o mais rápido possível, só depois que iremos promover a modificação para a nova estrutura em Kubernetes.
 
-**ETAPA 1: MIGRAÇÃO "AS-IS"**
+**ETAPA 1: Migração "AS-IS"**
 
 ATIVIDADES NECESSÁRIAS PARA A MIGRAÇÃO
 
@@ -50,3 +50,15 @@ ATIVIDADES NECESSÁRIAS PARA A MIGRAÇÃO
 8. Execução de uma instância de substituição
 9. Limpeza após a substituição final
 
+**ETAPA: Modernização/Kubernetes**
+
+### **Arquitetura da solução proposta**
+
+A solução planejada na AWS é construída com base em serviços gerenciados que simplificam a gestão de infraestrutura e permitem à equipe de desenvolvimento focar no aprimoramento dos serviços oferecidos aos clientes. Essa abordagem reduz significativamente o esforço necessário para tarefas operacionais, como provisionamento de servidores e escalabilidade manual, direcionando os recursos para a entrega de novas funcionalidades e melhorias.
+
+Com uma infraestrutura gerenciada pela AWS, garantimos alta disponibilidade, segurança e desempenho, proporcionando uma experiência consistente para os usuários finais. Além disso, a adoção de práticas modernas, como integração e entrega contínuas (CI/CD), reforça a eficiência do desenvolvimento, assegurando que as aplicações atendam às expectativas de confiabilidade e agilidade no mercado.
+
+<div align="center">
+  <img src="/assets/ArquiteturaFinal.png">
+   <p><em>Arquitetura final sugerida</em></p>
+</div>
