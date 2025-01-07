@@ -170,3 +170,12 @@ Nessa abordagem, integramos os seguintes serviços da AWS, que desempenham papé
 **AWS CodePipeline:** É um serviço de automação de CI/CD que cria fluxos automatizados para desenvolver, testar, implantar e entregar aplicações. Ele reage automaticamente a mudanças de código no repositório CodeCommit, permitindo entregas frequentes e confiáveis. Isso otimiza o processo de desenvolvimento e implantação.
 
 **Amazon ECR:** O Amazon Elastic Container Registry (ECR) é um serviço totalmente gerenciado para armazenar e gerenciar imagens de contêiner Docker. Ele oferece uma maneira segura e confiável de armazenar e distribuir imagens de contêiner para seus aplicativos em execução na AWS ou em qualquer outro lugar.
+
+### AWS Well-Architected Framework
+
+A arquitetura proposta segue as melhores práticas e está de acordo com os pilares da AWS Well-Architected Framework.
+
+<div align="center">
+  <img src="/assets/PilaresAWS.png">
+   <p><em>Pilares da AWS Well-Architected Framework</em></p>
+</div>
