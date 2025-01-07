@@ -1,9 +1,9 @@
 # Projeto Final do Programa de Bolsas Compass UOL
 ___
 
-<p align="center">
-  <img src="./assets/LogoCompassUol.png" alt="Logo Compass">
-</p>
+<div align="center">
+  <img src="/src/LogoCompassUol.png" width="340px">
+</div>
 
 
 **Integrantes do Grupo:**
