@@ -179,3 +179,63 @@ A arquitetura proposta segue as melhores práticas e está de acordo com os pila
   <img src="/assets/PilaresAWS.png">
    <p><em>Pilares da AWS Well-Architected Framework</em></p>
 </div>
+
+**Excelência Operacional** 
+
+- A distribuição de recursos em várias zonas de disponibilidade aumenta a resiliência e a disponibilidade do sistema. 
+
+- O uso de métricas e alarmes no Amazon CloudWatch permite monitorar continuamente a saúde e o desempenho do sistema, facilitando a identificação e correção de problemas operacionais. 
+
+**Segurança**
+
+- A configuração do AWS WAF protege contra ataques comuns da web, como injeções SQL, cross-site scripting (XSS) e DDoS. 
+
+- A segregação de sub-redes públicas e privadas, juntamente com a configuração adequada de grupos de segurança e ACLs de rede, ajuda a garantir que os recursos estejam protegidos contra acesso não autorizado.  
+
+**Confiabilidade** 
+
+- As instâncias do EKS são distribuídas em várias zonas de disponibilidade dentro da mesma região da AWS, garantindo que a aplicação permaneça disponível em caso de falhas em uma zona.
+
+- Amazon RDS Multi-AZ: O banco de dados RDS é replicado automaticamente para uma zona de disponibilidade secundária, garantindo a alta disponibilidade e recuperação rápida em caso de falha do banco de dados primário. 
+
+- Os health checks do Application Load Balancer garantem que apenas instâncias saudáveis recebam tráfego.
+
+- O uso de múltiplos NAT Gateways distribuídos em várias zonas de disponibilidade aumenta a resiliência do sistema, garantindo que o tráfego de saída continue fluindo mesmo em caso de falha em uma zona. 
+ 
+**Eficiência de Desempenho**
+
+- O uso do Amazon CloudFront para distribuir conteúdo estático e otimizar a entrega de frontend e APIs melhora o desempenho do sistema, reduzindo assim a latência e melhorando a experiência do usuário. 
+
+- O Application Load Balancer distribui o tráfego de forma inteligente entre várias instâncias do Amazon EKS, garantindo alta disponibilidade e desempenho.
+
+**Custo Otimizado** 
+
+- Uso eficiente de recursos: O dimensionamento automático e a escolha de tipos de serviços adequados garantem que você utilize apenas os recursos que precisa, otimizando os custos da AWS.
+
+- Monitoramento de custos: O CloudWatch pode ser utilizado para monitorar os custos da infraestrutura e identificar oportunidades de otimização.
+  
+**Sustentabilidade**
+
+- Eficiência energética: O Fargate é uma plataforma serverless que utiliza apenas recursos computacionais necessários para executar os conteinêres, reduzindo o consumo de energia.
+
+- Práticas sustentáveis: A AWS oferece diversas práticas sustentáveis para reduzir o impacto ambiental da infraestrutura, como a utilização de fontes renováveis de energia e a otimização da refrigeração de data centers.
+
+<div align="center">
+  <img src="/assets/Custoarquitetura.png">
+</div>
+[Ver mais detalhes](https://calculator.aws/#/estimate?id=17cbfd330d1421d8930e591fb7a81eeb7ac72be8)
+
+### Custos
+
+|             Item             |                        Descrição                        |     Preço     |
+|:----------------------------:|:-------------------------------------------------------:|:-------------:|
+| Migração de dados para a AWS | Migração de dados on-premises para a AWS.                |    $108,77    |
+| Mão de obra                  | Custo da equipe de projeto e implementação.              |   $6.153,08   |
+| Infraestrutura da AWS        | Custo mensal da infraestrutura de serviços da AWS.       |    $998,39    |
+| Treinamento                  | Treinamento da equipe da Fast Engineering S/A.           |    $170,91    |
+| Suporte                      | Suporte mensal pós-implementação (10 horas/mês).         |    $355,02    |
+| **Custo único**              | **Total de custo único de implementação e treinamento.** | **$6.432,76** |
+| **Custo mensal**             | **Total de custo mensal de infraestrutura e suporte.**   | **$1.353,41** |
+
+## Cronograma Macro e Prazo de Entrega
+- Prazo total de entrega: 24 dias úteis.
