@@ -22,7 +22,7 @@ Atualmente usamos:
 * 01 servidor de backend com 3 APIs, com o Nginx servindo de balanceador de carga e que armazena estáticos como fotos e links. (5GB de dados, 4Gb de RAM, 2 Core CPU);
 
 <div align="center">
-  <img src="/assets/ArquiteturaAtual" width="650px">
+  <img src="/assets/ArquiteturaAtual.png" width="650px">
    <p><em>Arquitetura atual da Fast Engineering</em></p>
 </div>
 
