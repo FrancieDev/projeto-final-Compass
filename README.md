@@ -2,7 +2,7 @@
 ___
 
 <p align="center">
-  <img src="./assets/logoCompassUol.png" alt="Logo Compass">
+  <img src="./assets/LogoCompassUol.png" alt="Logo Compass">
 </p>
 
 
