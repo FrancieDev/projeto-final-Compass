@@ -147,3 +147,26 @@ O AWS DMS é um serviço de replicação e migração gerenciado que ajuda a mov
 
 Propomos a migração segura e eficiente do servidor MySQL on-premises para o Amazon RDS na nuvem utilizando o AWS Database Migration Service (DMS). O DMS garante replicação contínua dos dados durante a migração, assegurando integridade e consistência. 
 O DMS facilita o processo com uma interface amigável para configuração e gerenciamento, além de oferecer monitoramento completo da migração. Com o AWS DMS e o RDS, garantimos uma migração tranquila, segura e eficiente para a nuvem e ao mesmo tempo, será possível desfrutar de escalabilidade sob demanda, confiabilidade e segurança robusta, redução de custos e alto desempenho.
+
+### **🔧 Implementação**
+
+Na fase de implementação da arquitetura na AWS, utilizaremos uma abordagem de Integração Contínua e Implantação Contínua (CI/CD) para otimizar o desenvolvimento e a entrega.
+
+Isso é essencial para a adoção das práticas DevOps, que visam a colaboração e a automação entre equipes de desenvolvimento e operações.
+
+Nessa abordagem, integramos os seguintes serviços da AWS, que desempenham papéis fundamentais em automatizar o ciclo de vida de desenvolvimento, construção e implantação de aplicações:
+
+- AWS CodeCommit
+- AWS CodeBuild
+- AWS CodeDeploy
+- AWS CodePipeline
+
+**AWS CodeCommit:** É um serviço de hospedagem de repositórios de controle de versão privados. Ele fornece um ambiente seguro e escalável para armazenar e gerenciar código-fonte. Com recursos de controle de acesso baseados em IAM, permite colaborações de maneira eficiente, controle de versões e rastreio de alterações ao longo do tempo.
+
+**AWS CodeBuild:** É um serviço de compilação gerenciada que automatiza a construção, teste e geração de artefatos de código-fonte. Ele oferece ambientes de compilação sob demanda e escaláveis, permitindo criação e testes do código em paralelo. Tem suporte a vários ambientes de execução, podendo criar e empacotar aplicações para várias plataformas e arquiteturas.
+
+**AWS CodeDeploy:** Serviço que automatiza a implantação de aplicativos em ambientes de teste e produção de forma consistente e controlada. Ele suporta implantações em instâncias EC2, serviços ECS e até mesmo ambientes on-premises. Com a automação de implantação, permite reduzir erros manuais e garante uma implantação uniforme em ambientes diferentes.
+
+**AWS CodePipeline:** É um serviço de automação de CI/CD que cria fluxos automatizados para desenvolver, testar, implantar e entregar aplicações. Ele reage automaticamente a mudanças de código no repositório CodeCommit, permitindo entregas frequentes e confiáveis. Isso otimiza o processo de desenvolvimento e implantação.
+
+**Amazon ECR:** O Amazon Elastic Container Registry (ECR) é um serviço totalmente gerenciado para armazenar e gerenciar imagens de contêiner Docker. Ele oferece uma maneira segura e confiável de armazenar e distribuir imagens de contêiner para seus aplicativos em execução na AWS ou em qualquer outro lugar.
