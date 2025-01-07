@@ -2,7 +2,7 @@
 ___
 
 <div align="center">
-  <img src="/src/LogoCompassUol.png" width="340px">
+  <img src="/assets/LogoCompassUol.png" width="340px">
 </div>
 
 
@@ -21,7 +21,10 @@ Atualmente usamos:
 * 01 servidor para a aplicação utilizando REACT – frontend (5GB de dados, 2Gb de RAM, 1 Core CPU);
 * 01 servidor de backend com 3 APIs, com o Nginx servindo de balanceador de carga e que armazena estáticos como fotos e links. (5GB de dados, 4Gb de RAM, 2 Core CPU);
 
-![situação atual](./assets/ArquiteturaAtual.png)
+<div align="center">
+  <img src="/assets/ArquiteturaAtual" width="650px">
+   <p><em>Arquitetura atual da Fast Engineering</em></p>
+</div>
 
 Queremos modernizar esse sistema para a AWS, precisamos seguir as melhores práticas arquitetura em Cloud AWS, a nova arquitetura deve seguir as seguintes diretrizes:
 
