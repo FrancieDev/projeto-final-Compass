@@ -50,7 +50,7 @@ ATIVIDADES NECESSÁRIAS PARA A MIGRAÇÃO
 8. Execução de uma instância de substituição
 9. Limpeza após a substituição final
 
-**ETAPA: Modernização/Kubernetes**
+**ETAPA 2: Modernização/Kubernetes**
 
 ### **Arquitetura da solução proposta**
 
@@ -240,3 +240,20 @@ A arquitetura proposta segue as melhores práticas e está de acordo com os pila
 
 ## Cronograma Macro e Prazo de Entrega
 - Prazo total de entrega: 24 dias úteis.
+
+## 📑 Referências:
+
+- https://aws.amazon.com/pt/dms/ 
+- https://aws.amazon.com/pt/architecture/well-architected/?wa-lens-whitepapers.sort-by=item.additionalFields.sortDate&wa-lens-whitepapers.sort-order=desc&wa-guidance-whitepapers.sort-by=item.additionalFields.sortDate&wa-guidance-whitepapers.sort-order=desc
+- https://docs.aws.amazon.com/pt_br/s3/index.html?nc2=h_ql_doc_s3
+- https://docs.aws.amazon.com/pt_br/waf/index.html
+- https://aws.amazon.com/pt/eks/
+##
+
+## 🔗 Links úteis:
+
+- Diagrama da nova Arquitetura: https://abre.ai/arquiteturafinalcompassuol
+
+<div align="center">
+  <img src="/assets/LogoCompassUol.png" width="340px">
+</div>
