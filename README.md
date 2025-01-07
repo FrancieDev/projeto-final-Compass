@@ -63,7 +63,7 @@ Com uma infraestrutura gerenciada pela AWS, garantimos alta disponibilidade, seg
    <p><em>Arquitetura final sugerida</em></p>
 </div>
 
-### **🧰 Serviços e Recursos Usados na Arquitetura**
+# 🧰 Serviços e Recursos Usados na Arquitetura
 
 #### Amazon Cognito
 O Amazon Cognito oferece um armazenamento de identidade que pode ser dimensionado para milhões de usuários, oferece suporte à federação de identidades sociais e corporativas e oferece recursos avançados de segurança para proteger seus consumidores e negócios. 
@@ -148,7 +148,7 @@ O AWS DMS é um serviço de replicação e migração gerenciado que ajuda a mov
 Propomos a migração segura e eficiente do servidor MySQL on-premises para o Amazon RDS na nuvem utilizando o AWS Database Migration Service (DMS). O DMS garante replicação contínua dos dados durante a migração, assegurando integridade e consistência. 
 O DMS facilita o processo com uma interface amigável para configuração e gerenciamento, além de oferecer monitoramento completo da migração. Com o AWS DMS e o RDS, garantimos uma migração tranquila, segura e eficiente para a nuvem e ao mesmo tempo, será possível desfrutar de escalabilidade sob demanda, confiabilidade e segurança robusta, redução de custos e alto desempenho.
 
-### **🔧 Implementação**
+# 🔧 Implementação
 
 Na fase de implementação da arquitetura na AWS, utilizaremos uma abordagem de Integração Contínua e Implantação Contínua (CI/CD) para otimizar o desenvolvimento e a entrega.
 
