@@ -38,7 +38,7 @@ Porém antes da migração acontecer para a nova estrutura, precisamos fazer uma
 
 **ETAPA 1: Migração "AS-IS"**
 
-Atividades necessárias para a migração
+**Atividades necessárias para a migração**
 
 1. Definição dos pré-requisitos
    * Servidores de origem:
@@ -87,8 +87,7 @@ Atividades necessárias para a migração
 (A INSERIR)
 
 
-GARANTIA DOS REQUISITOS DE SEGURANÇA
-
+**Garantia dos requisitos de segurança**
 * AWS IAM
   * Criação de usuários e grupos de usuários com permissões e políticas de acesso definidas
 * Amazon VPC
@@ -96,7 +95,7 @@ GARANTIA DOS REQUISITOS DE SEGURANÇA
 NAT Gateway
 	* Criação de um gateway de internet privado para que as instâncias nas sub-redes privadas tenham acesso à internet, mas os serviços externos não tenham conexão a elas.
 
-PROCESSOS DE BACK-UP
+**Processos de backup**
 * AWS Backup: O AWS Backup é um serviço econômico, totalmente gerenciado e baseado em políticas que simplifica a proteção de dados em escala. É possível realizar backup de armazenamentos de dados importantes, como seus buckets, volumes, bancos de dados e sistemas de arquivos entre produtos da AWS. Com apenas alguns cliques no console do AWS Backup, podemos criar políticas de backup que automatizam o gerenciamento da programação e da retenção dos backups, os chamados "planos de backup". Podemos usar esses planos para definir os requisitos de backup, como a frequência com que fazer backup dos dados e por quanto tempo reter esses backups. O AWS Backup permite aplicar planos de backup aos  recursos da AWS simplesmente marcando-os. Em seguida, o AWS Backup faz backup automático dos recursos da AWS de acordo com o plano de backup que você definiu.
 
 
