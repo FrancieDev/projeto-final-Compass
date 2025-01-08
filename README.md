@@ -95,6 +95,10 @@ GARANTIA DOS REQUISITOS DE SEGURANÇA
 NAT Gateway
 	* Criação de um gateway de internet privado para que as instâncias nas sub-redes privadas tenham acesso à internet, mas os serviços externos não tenham conexão a elas.
 
+PROCESSOS DE BACK-UP
+* Snapshots do Amazon EBS: Os snapshots do Amazon Elastic Block Store (EBS) fornecem uma solução de proteção de dados simples e segura que foi projetada para proteger os dados do armazenamento em bloco, como os volumes do EBS, os volumes de inicialização e os dados em bloco on-premises. Os snapshots do EBS são uma cópia para um ponto no tempo dos dados e podem ser usados para habilitar a recuperação de desastres, migrar dados entre regiões e contas e aprimorar a conformidade do backup.
+* Snapshots do Amazon RDS: O Amazon RDS cria um snapshot do volume de armazenamento de sua instância de banco de dados, fazendo o backup de toda a instância de banco de dados, não apenas dos bancos de dados individuais. Ao criar um snapshot de banco de dados, será preciso identificar de qual instância de banco de dados deseja fazer backup e, em seguida, dar um nome para a sua instância de banco de dados para que você possa restaurar a partir dela depois.
+
 
 **ETAPA 2: Modernização/Kubernetes**
 
