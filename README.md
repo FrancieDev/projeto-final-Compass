@@ -41,14 +41,25 @@ Porém antes da migração acontecer para a nova estrutura, precisamos fazer uma
 ATIVIDADES NECESSÁRIAS PARA A MIGRAÇÃO
 
 1. Definição dos pré-requisitos
-2. Criação do usuário do AWS Identity and Access Management (IAM)
-3. Acesso ao console do AWS MGN
-4. Definição do modelo de configurações de replicação
-5. Instalação do AWS Replication Agent
-6. Definição das configurações de execução
-7. Execução de uma instância de teste
-8. Execução de uma instância de substituição
-9. Limpeza após a substituição final
+   * Servidores de origem:
+      * Acesso direto aos endpoints da API de serviço da AWS pelo protocolo HTTPS (porta TCP 443)
+        * AWS MGN
+        * Amazon Simple Storage Service (Amazon S3)
+      * Porta TCP de saída direta 1500 do servidor de origem para a sub-rede da área de preparo, onde estão os servidores de replicação
+    * Sub-rede da área de preparação
+      * Acesso direto aos endpoints da API de serviço da AWS pelo protocolo HTTPS (porta TCP 443)
+        * AWS MGN
+        * Amazon Simple Storage Service (Amazon S3)
+        * Amazon EC2
+      * Porta TCP de entrada direta 1500 
+3. Criação do usuário do AWS Identity and Access Management (IAM)
+4. Acesso ao console do AWS MGN
+5. Definição do modelo de configurações de replicação
+6. Instalação do AWS Replication Agent
+7. Definição das configurações de execução
+8. Execução de uma instância de teste
+9. Execução de uma instância de substituição
+10. Limpeza após a substituição final
 
 **ETAPA 2: Modernização/Kubernetes**
 
