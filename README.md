@@ -84,7 +84,7 @@ Porém antes da migração acontecer para a nova estrutura, precisamos fazer uma
 * AWS Replication Agent
 
 **Diagrama da infraestrutura na AWS para migração "as-is"**
-(A INSERIR)
+INSERIR AQUI
 
 
 **Garantia dos requisitos de segurança**
