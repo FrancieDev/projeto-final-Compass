@@ -77,6 +77,19 @@ ATIVIDADES NECESSÁRIAS PARA A MIGRAÇÃO
 9. Limpeza após a substituição final
    * Após concluir a substituição, será possível arquivar os servidores para removê-los do AWS MGN onde eles não serão mais visíveis
    * É possível visualizar os servidores arquivados posteriormente
+  
+FERRAMENTAS PARA A MIGRAÇÃO "AS-IS"
+
+* Virtual Private Cloud (VPC) e sub-redes (públicas e privadas)
+* AWS Replication Agent
+
+DIAGRAMA DA INFRAESTRUTURA NA AWS PARA MIGRAÇÃO "AS-IS"
+(INSERIR)
+
+GARANTIA DOS REQUISITOS DE SEGURANÇA
+
+* 
+
 
 **ETAPA 2: Modernização/Kubernetes**
 
