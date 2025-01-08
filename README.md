@@ -38,7 +38,7 @@ Porém antes da migração acontecer para a nova estrutura, precisamos fazer uma
 
 **ETAPA 1: Migração "AS-IS"**
 
-ATIVIDADES NECESSÁRIAS PARA A MIGRAÇÃO
+Atividades necessárias para a migração
 
 1. Definição dos pré-requisitos
    * Servidores de origem:
@@ -78,13 +78,14 @@ ATIVIDADES NECESSÁRIAS PARA A MIGRAÇÃO
    * Após concluir a substituição, será possível arquivar os servidores para removê-los do AWS MGN onde eles não serão mais visíveis
    * É possível visualizar os servidores arquivados posteriormente
   
-FERRAMENTAS PARA A MIGRAÇÃO "AS-IS"
+**Ferramentas para a migração "as-is"**
 
 * Virtual Private Cloud (VPC) e sub-redes (públicas e privadas)
 * AWS Replication Agent
 
-DIAGRAMA DA INFRAESTRUTURA NA AWS PARA MIGRAÇÃO "AS-IS"
-(INSERIR)
+**Diagrama da infraestrutura na AWS para migração "as-is"**
+(A INSERIR)
+
 
 GARANTIA DOS REQUISITOS DE SEGURANÇA
 
@@ -96,8 +97,7 @@ NAT Gateway
 	* Criação de um gateway de internet privado para que as instâncias nas sub-redes privadas tenham acesso à internet, mas os serviços externos não tenham conexão a elas.
 
 PROCESSOS DE BACK-UP
-* Snapshots do Amazon EBS: Os snapshots do Amazon Elastic Block Store (EBS) fornecem uma solução de proteção de dados simples e segura que foi projetada para proteger os dados do armazenamento em bloco, como os volumes do EBS, os volumes de inicialização e os dados em bloco on-premises. Os snapshots do EBS são uma cópia para um ponto no tempo dos dados e podem ser usados para habilitar a recuperação de desastres, migrar dados entre regiões e contas e aprimorar a conformidade do backup.
-* Snapshots do Amazon RDS: O Amazon RDS cria um snapshot do volume de armazenamento de sua instância de banco de dados, fazendo o backup de toda a instância de banco de dados, não apenas dos bancos de dados individuais. Ao criar um snapshot de banco de dados, será preciso identificar de qual instância de banco de dados deseja fazer backup e, em seguida, dar um nome para a sua instância de banco de dados para que você possa restaurar a partir dela depois.
+* AWS Backup: O AWS Backup é um serviço econômico, totalmente gerenciado e baseado em políticas que simplifica a proteção de dados em escala. É possível realizar backup de armazenamentos de dados importantes, como seus buckets, volumes, bancos de dados e sistemas de arquivos entre produtos da AWS. Com apenas alguns cliques no console do AWS Backup, podemos criar políticas de backup que automatizam o gerenciamento da programação e da retenção dos backups, os chamados "planos de backup". Podemos usar esses planos para definir os requisitos de backup, como a frequência com que fazer backup dos dados e por quanto tempo reter esses backups. O AWS Backup permite aplicar planos de backup aos  recursos da AWS simplesmente marcando-os. Em seguida, o AWS Backup faz backup automático dos recursos da AWS de acordo com o plano de backup que você definiu.
 
 
 **ETAPA 2: Modernização/Kubernetes**
