@@ -88,7 +88,12 @@ DIAGRAMA DA INFRAESTRUTURA NA AWS PARA MIGRAÇÃO "AS-IS"
 
 GARANTIA DOS REQUISITOS DE SEGURANÇA
 
-* 
+* AWS IAM
+  * Criação de usuários e grupos de usuários com permissões e políticas de acesso definidas
+* Amazon VPC
+	* Criação de rede virtual privada isolada e segura na AWS, fornecendo controle de tráfego através de grupos de segurança.
+NAT Gateway
+	* Criação de um gateway de internet privado para que as instâncias nas sub-redes privadas tenham acesso à internet, mas os serviços externos não tenham conexão a elas.
 
 
 **ETAPA 2: Modernização/Kubernetes**
