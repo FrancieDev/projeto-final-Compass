@@ -52,14 +52,31 @@ ATIVIDADES NECESSÁRIAS PARA A MIGRAÇÃO
         * Amazon Simple Storage Service (Amazon S3)
         * Amazon EC2
       * Porta TCP de entrada direta 1500 
-3. Criação do usuário do AWS Identity and Access Management (IAM)
-4. Acesso ao console do AWS MGN
-5. Definição do modelo de configurações de replicação
-6. Instalação do AWS Replication Agent
-7. Definição das configurações de execução
-8. Execução de uma instância de teste
-9. Execução de uma instância de substituição
-10. Limpeza após a substituição final
+2. Criação do usuário do AWS Identity and Access Management (IAM)
+   * Criar um usuário do IAM para gerenciar as credenciais usadas pelo AWS Replication Agent
+   * Usar política gerenciada pela AWS para controle de permissão
+   * Política com permissões necessárias para adicionar o servidor ao controle do AWS MGN   
+3. Acesso ao console do AWS MGN
+   * Acessar o console de gerenciamento do AWS MGN através do console da AWS para o iniciar o serviço do AWS MGN e criar um modelo de replicação 
+4. Definição do modelo de configurações de replicação
+   * Criar um modelo de configurações de replicação que determina como a replicação é definida para cada servidor de origem pré-adicionado (MySQL, APIs e Front-end)
+   * Nos padrões de "Roteamento de limitação de dados", usar IP privado para a replicação de dados entre os servidores para garantir a segurança
+5. Instalação do AWS Replication Agent
+   * Criar os três servidores de origem no painel EC2
+   * No painel do Application Migration Service, adicionar os servidores de origem para obter o link de instalação do agente de replicação
+   * Fazer login nos servidores de origem por SSH e colar o comando de download e instalação do instalador do agente
+   * Verificar se os servidores de origem aparecem na lista de Source Serves do Application Migration Service
+6. Definição das configurações de execução
+   * As configurações de execução são uma série de instruções que consistem em duas seções: Configurações de execução gerais e Modelo de execução do EC2.
+   * Essas configurações definem como as instâncias de substituição serão executadas para cada servidor da AWS.
+7. Execução das instâncias de teste
+   * Executar as instâncias de teste na região AWS selecionada
+8. Execução das instâncias de substituição
+   * A instância de substituição executará o servidor de origem na região AWS selecionada
+   * Os servidores de origem estarão prontos para substituição quando o status "Healthy" for exibido na lista de source servers
+9. Limpeza após a substituição final
+   * Após concluir a substituição, será possível arquivar os servidores para removê-los do AWS MGN onde eles não serão mais visíveis
+   * É possível visualizar os servidores arquivados posteriormente
 
 **ETAPA 2: Modernização/Kubernetes**
 
