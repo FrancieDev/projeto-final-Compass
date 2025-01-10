@@ -100,7 +100,12 @@ NAT Gateway
 
 **Custo da Migração as-is e Infraestrutura**
 
+<div align="center">
+  <img src="/assets/Custo migração as-is.png">
+   <p><em>Custo da migração as-is e Infraestrutura AWS</em></p>
+</div>
 
+[Ver mais detalhes](https://calculator.aws/#/estimate?id=654f1d4ea9e09b378dfe84bf65e503567e1c3270)
 
 **ETAPA 2: Modernização/Kubernetes**
 
