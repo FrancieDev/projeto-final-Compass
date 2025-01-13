@@ -84,7 +84,11 @@ Porém antes da migração acontecer para a nova estrutura, precisamos fazer uma
 * AWS Replication Agent
 
 **Diagrama da infraestrutura na AWS para migração "as-is"**
-INSERIR AQUI
+
+<div align="center">
+  <img src="/assets/MigraçãoAsIs.png">
+   <p><em>Arquitetura migração As-Is</em></p>
+</div>
 
 
 **Garantia dos requisitos de segurança**
@@ -98,11 +102,11 @@ NAT Gateway
 **Processos de backup**
 * AWS Backup: O AWS Backup é um serviço econômico, totalmente gerenciado e baseado em políticas que simplifica a proteção de dados em escala. É possível realizar backup de armazenamentos de dados importantes, como seus buckets, volumes, bancos de dados e sistemas de arquivos entre produtos da AWS. Com apenas alguns cliques no console do AWS Backup, podemos criar políticas de backup que automatizam o gerenciamento da programação e da retenção dos backups, os chamados "planos de backup". Podemos usar esses planos para definir os requisitos de backup, como a frequência com que fazer backup dos dados e por quanto tempo reter esses backups. O AWS Backup permite aplicar planos de backup aos  recursos da AWS simplesmente marcando-os. Em seguida, o AWS Backup faz backup automático dos recursos da AWS de acordo com o plano de backup que você definiu.
 
-**Custo da Migração as-is e Infraestrutura**
+**Custo da migração As-Is e Infraestrutura**
 
 <div align="center">
   <img src="/assets/Custo migração as-is.png">
-   <p><em>Custo da migração as-is e Infraestrutura AWS</em></p>
+   <p><em>Custo da migração As-Is e Infraestrutura AWS</em></p>
 </div>
 
 [Ver mais detalhes](https://calculator.aws/#/estimate?id=654f1d4ea9e09b378dfe84bf65e503567e1c3270)
@@ -120,7 +124,7 @@ Com uma infraestrutura gerenciada pela AWS, garantimos alta disponibilidade, seg
    <p><em>Arquitetura final sugerida</em></p>
 </div>
 
-# 🧰 Serviços e Recursos Usados na Arquitetura
+# 🔧 Serviços e Recursos
 
 #### Amazon Cognito
 O Amazon Cognito oferece um armazenamento de identidade que pode ser dimensionado para milhões de usuários, oferece suporte à federação de identidades sociais e corporativas e oferece recursos avançados de segurança para proteger seus consumidores e negócios. 
