@@ -77,11 +77,27 @@ Porém antes da migração acontecer para a nova estrutura, precisamos fazer uma
 9. Limpeza após a substituição final
    * Após concluir a substituição, será possível arquivar os servidores para removê-los do AWS MGN onde eles não serão mais visíveis
    * É possível visualizar os servidores arquivados posteriormente
+
+**Migração do Banco de dados pelo serviço AWS DMS**
+1. Configuração dos Pontos de Conexão
+Fonte (Source): Onde os dados estão atualmente.
+Destino (Target): Onde você quer que os dados sejam migrados.
+
+2. Criação de Tarefa de Migração que especifica a conexão com a fonte e o destino.
+
+3. AWS DMS executa a tarefa de migração, transferindo dados da fonte para o destino. Pode ser uma migração única ou uma replicação contínua para manter os dados sincronizados.
+
+4. Se a fonte e o destino usam diferentes sistemas de banco de dados, AWS DMS pode converter automaticamente os esquemas da fonte para o destino.
+
+5. Monitoramento e Ajustes. Durante a migração, podemos monitorar o progresso e fazer ajustes conforme necessário.
+
+6. Finalização. Após a migração ser concluída, podemos verificar os dados no destino para garantir que tudo foi transferido corretamente.
   
 **Ferramentas para a migração "as-is"**
 
 * Virtual Private Cloud (VPC) e sub-redes (públicas e privadas)
 * AWS Replication Agent
+* AWS DMS (Migração de Banco de Dados)
 
 **Diagrama da infraestrutura na AWS para migração "as-is"**
 
