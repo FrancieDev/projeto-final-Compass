@@ -95,9 +95,13 @@ Destino (Target): Onde você quer que os dados sejam migrados.
   
 **Ferramentas para a migração "as-is"**
 
+* AWS MGN e AWS Replication Agent
+* Amazon S3
+* Amazon EC2
+* Amazon IAM
 * Virtual Private Cloud (VPC) e sub-redes (públicas e privadas)
-* AWS Replication Agent
 * AWS DMS (Migração de Banco de Dados)
+* RDS
 
 **Diagrama da infraestrutura na AWS para migração "as-is"**
 
